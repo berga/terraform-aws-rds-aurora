@@ -141,8 +141,8 @@ resource "aws_rds_cluster" "this" {
       # Since this is used either in read-replica clusters or global clusters, this should be acceptable to specify
       replication_source_identifier,
       # See docs here https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_global_cluster#new-global-cluster-from-existing-db-cluster
-      global_cluster_identifier,
-      snapshot_identifier,
+      global_cluster_identifier # ,
+      # snapshot_identifier,
     ]
   }
 
